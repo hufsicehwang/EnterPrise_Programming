@@ -127,4 +127,11 @@ console.log(a.splice(1, 1)); // => [4]; a is now [1]
 console.log(a);
 
 
-
+// Use IIFE
+// define independent section 
+(()=>{
+  let x=100;
+  let y=200;
+  [x,y] = [y,x];
+  console.log(x,y);
+})();

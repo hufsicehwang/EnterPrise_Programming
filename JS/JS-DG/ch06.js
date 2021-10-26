@@ -112,4 +112,11 @@ console.log(n, id);
 const { name, isbn } = paip; //const { name:name, isbn:isbn} = paip;
 console.log(name, isbn);
 
+// Use IIFE
+// define independent section 
+(()=>{
+  let obj = {x:100,y:200,z:300};
+  let {x,y} = obj;
+  console.log(x,y);
+})();
 
